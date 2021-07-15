@@ -3,6 +3,10 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
+// Add the import
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+// Call the loader
+defineCustomElements(window);
 
 if (environment.production) {
   enableProdMode();
